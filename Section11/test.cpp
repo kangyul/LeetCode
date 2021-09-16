@@ -16,7 +16,6 @@ int main(void) {
             st.push(s);
         } else {
             st.pop();
-            st.pop();
         }
 
     }
