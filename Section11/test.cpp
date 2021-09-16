@@ -6,24 +6,48 @@ stack<char> st;
 
 int main(void) {
 
-    string str = "Mississippi";
+    string A = "Mississippi";
 
-    for(int i=0; i<str.size(); i++) {
-        char s = str[i];
-        if(i==0) st.push(s);
+    // Time Complexity: O(N), Space Complexity: O(N)
 
-        if(s != st.top()) {
-            st.push(s);
+    // for(int i=0; i<str.size(); i++) {
+    //     if(st.empty() || st.top() != str[i]) {
+    //         st.push(str[i]);
+    //     } else {
+    //         st.pop();
+    //     }
+    // }
+
+    // string ans = "";
+    // while(!st.empty()) {
+    //     ans.push_back(st.top());
+    //     st.pop();
+    // }
+
+    // reverse(ans.begin(), ans.end());
+
+    // cout << ans << '\n';
+
+    // Time Complexity: O(N), Space Complexity: O(1);
+
+    int strptr = -1;
+
+    for(int i=0; i<A.size(); i++) {
+        if(strptr == -1 || A[strptr] != A[i]) {
+            strptr++;
+            A[strptr] = A[i];
         } else {
-            st.pop();
+            strptr--;
         }
-
     }
 
-    for(int i=0; i<st.size(); i++) {
-        cout << st.top();
-        st.pop();
+    string ans = "";
+
+    for(int i=0; i<=strptr; i++) {
+        ans.push_back(A[i]);
     }
+
+    cout << ans << '\n';
 
     return 0;
 }
@@ -31,3 +55,4 @@ int main(void) {
 // 1) stack empty then, push
 // 2) if A[i] != stack.top() then, push
 // 3) else if A[i] == stack.top() then, stack.pop() (twice)
+// 4) Finally, we need to reverse the stack
