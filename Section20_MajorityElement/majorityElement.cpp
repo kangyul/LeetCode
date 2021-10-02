@@ -24,5 +24,16 @@ int main(void) {
 
     cout << cand << endl;
 
+    // if we cannot assume, we need to check
+
+    int count2=0;
+
+    for(int i=0; i<7; i++) {
+        if(a[i]==cand) count2++;
+    }
+
+    if(count>7/2) cout << cand << endl;
+    else cout << -1 << endl;
+
     return 0;
 }
