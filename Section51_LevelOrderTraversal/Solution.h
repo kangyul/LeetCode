@@ -21,7 +21,7 @@ public:
         vector<vector<int>> v;
 
         if(root == nullptr) return v;
-        
+
         vector<int> temp;
 
         queue<TreeNode*> q;
