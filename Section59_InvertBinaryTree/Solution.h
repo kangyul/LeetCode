@@ -16,9 +16,16 @@ struct TreeNode {
 
 class Solution {
 public:
-    int maxDepth(TreeNode* root) {
-        if(root == nullptr) return 0;
-        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
+
+    TreeNode* invertTree(TreeNode* root) {
+        if(root == nullptr) return nullptr;
+
+        swap(root->left, root->right);
+
+        root->left = invertTree(root->left);
+        root->right = invertTree(root->right);
+
+        return root;
     }
 };
 
