@@ -31,7 +31,8 @@ public:
     }
 
     TreeNode* sortedArrayToBST(vector<int>& nums) {
-
+        int n = nums.size();
+        helper(nums, 0, n - 1);
     }
 };
 
