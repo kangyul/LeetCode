@@ -1,0 +1,25 @@
+// Priority Queues
+
+// * Flight Reservation System
+// - priority factor
+
+// * VIP Factors 
+
+// Age Factor 
+
+Passesngers -> elements
+- extract elements in specific order
+
+Hospital Management System
+
+1) FCFS p1 -> p2 -> p3 -> 4 -> 5
+
+2) Criticality Factor 15, 30, 20, 10, 100
+: 5 -> 2-> 3-> 1-> 4
+
+two types: min PQ and max PQ
+
+Function we need
+1) insert
+2) get MAX/ get min
+3) remove Max/ remove Min
