@@ -1,0 +1,18 @@
+Heaps -> PQ
+
+Balanced BST -> NlogN
+
+1) Balanced
+2) Store -> complicated
+
+Heap Properties
+1) Complete Binary Tree (CBT)
+2) Heap order Propertie
+
+
+CBT
+-> all levels are completely filled
+execpt last level 
+-> left to Right
+
+ 
