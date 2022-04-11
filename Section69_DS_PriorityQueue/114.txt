@@ -1,0 +1,21 @@
+Ways to Implement PQ
+
+Min -> 14 9 8 3 1 2 / 20 0
+: 1 2 3 0
+
+Max -> 14 9 8 3 1 2 / 20 0
+: 14 9 20 8
+
+                    Insert     getMin/getMax    removeMin/removeMax
+Array(unsorted)       O(1)          O(n)            O(n) + O(n)
+Array(sorted)         O(n)          O(1)               O(n) 
+LL (unsorted)         O(1)          O(n)            O(n) + O(1) 
+LL (sorted)           O(n)          O(1)            O(1)
+BST                   O(h) -> O(n)  O(h) -> O(n)    O(h) -> O(n)
+Balanced 
+BST                   O(h) -> O(logn)   "            O(logN)
+
+
+
+
+
