@@ -14,5 +14,3 @@ CBT
 -> all levels are completely filled
 execpt last level 
 -> left to Right
-
- 

@@ -1,0 +1,12 @@
+min Nodes = 2^(h-1)
+max Nodes = 2^h - 1
+
+2^(h-1) <= n <= 2^h - 1
+
+->>
+
+log2(n+1) <= h <= log2n + 1
+: h = O(logn)
+
+
+
